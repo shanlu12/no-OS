@@ -1,0 +1,12 @@
+<map id="adxl372_init_param" name="adxl372_init_param">
+<area shape="rect" id="node1" title=" " alt="" coords="664,149,815,176"/>
+<area shape="rect" id="node2" href="$structno__os__i2c__init__param.html" title="Structure holding the parameters for I2C initialization." alt="" coords="350,7,513,33"/>
+<area shape="rect" id="node3" href="$structno__os__i2c__platform__ops.html" title="Structure holding I2C function pointers that point to the platform specific function." alt="" coords="10,7,189,33"/>
+<area shape="rect" id="node4" href="$structno__os__gpio__init__param.html" title="Structure holding the parameters for GPIO initialization." alt="" coords="345,67,517,93"/>
+<area shape="rect" id="node5" href="$structno__os__gpio__platform__ops.html" title="Structure holding gpio function pointers that point to the platform specific function." alt="" coords="5,67,193,93"/>
+<area shape="rect" id="node6" href="$structadxl372__irq__config.html" title=" " alt="" coords="359,121,503,148"/>
+<area shape="rect" id="node7" href="$structno__os__spi__init__param.html" title="Structure holding the parameters for SPI initialization." alt="" coords="350,172,513,199"/>
+<area shape="rect" id="node8" href="$structno__os__spi__platform__ops.html" title="Structure holding SPI function pointers that point to the platform specific function." alt="" coords="10,172,189,199"/>
+<area shape="rect" id="node9" href="$structadxl372__fifo__config.html" title=" " alt="" coords="357,223,505,249"/>
+<area shape="rect" id="node10" href="$structadxl372__activity__threshold.html" title=" " alt="" coords="332,295,531,321"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="ad3552r_init_param" name="ad3552r_init_param">
+<area shape="rect" id="node1" title=" " alt="" coords="231,213,383,240"/>
+<area shape="rect" id="node2" href="$structno__os__gpio__init__param.html" title="Structure holding the parameters for GPIO initialization." alt="" coords="13,109,185,136"/>
+<area shape="rect" id="node3" href="$structno__os__gpio__platform__ops.html" title="Structure holding gpio function pointers that point to the platform specific function." alt="" coords="5,13,193,39"/>
+<area shape="rect" id="node4" href="$structno__os__spi__init__param.html" title="Structure holding the parameters for SPI initialization." alt="" coords="226,109,389,136"/>
+<area shape="rect" id="node5" href="$structno__os__spi__platform__ops.html" title="Structure holding SPI function pointers that point to the platform specific function." alt="" coords="218,13,397,39"/>
+<area shape="rect" id="node6" href="$structad3552r__channel__init.html" title=" " alt="" coords="421,109,583,136"/>
+<area shape="rect" id="node7" href="$structad3552r__custom__output__range__cfg.html" title=" " alt="" coords="421,5,599,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="app_ad9083" name="app_ad9083">
+<area shape="rect" id="node1" title="Structure holding ad9083 app descriptor." alt="" coords="133,303,235,329"/>
+<area shape="rect" id="node2" href="$structad9083__phy.html" title="Structure holding ad9083 descriptor." alt="" coords="133,213,235,240"/>
+<area shape="rect" id="node3" href="$structno__os__spi__desc.html" title="Structure holding SPI descriptor." alt="" coords="48,95,171,121"/>
+<area shape="rect" id="node4" href="$structno__os__spi__platform__ops.html" title="Structure holding SPI function pointers that point to the platform specific function." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node5" href="$structno__os__gpio__desc.html" title="Structure holding the GPIO descriptor." alt="" coords="223,95,355,121"/>
+<area shape="rect" id="node6" href="$structno__os__gpio__platform__ops.html" title="Structure holding gpio function pointers that point to the platform specific function." alt="" coords="209,5,397,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="drivers/gyro/adxrs290/adxrs290.c" name="drivers/gyro/adxrs290/adxrs290.c">
+<area shape="rect" id="node1" title="Implementation of ADXRS290 Driver." alt="" coords="294,5,458,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="106,244,176,271"/>
+<area shape="rect" id="node3" title=" " alt="" coords="394,95,464,121"/>
+<area shape="rect" id="node4" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="489,95,598,121"/>
+<area shape="rect" id="node6" href="$adxrs290_8h.html" title="Implementation of ADXRS290 Driver." alt="" coords="275,95,370,121"/>
+<area shape="rect" id="node5" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="510,169,578,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="302,244,372,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="416,244,498,271"/>
+<area shape="rect" id="node9" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="24,169,130,196"/>
+<area shape="rect" id="node10" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="154,169,253,196"/>
+<area shape="rect" id="node11" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="278,169,378,196"/>
+</map>

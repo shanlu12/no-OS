@@ -1,0 +1,10 @@
+<map id="ad463x_init_param" name="ad463x_init_param">
+<area shape="rect" id="node1" title=" " alt="" coords="683,107,829,133"/>
+<area shape="rect" id="node2" href="$structaxi__clkgen__init.html" title=" " alt="" coords="360,5,480,32"/>
+<area shape="rect" id="node3" href="$structno__os__gpio__init__param.html" title="Structure holding the parameters for GPIO initialization." alt="" coords="334,56,506,83"/>
+<area shape="rect" id="node4" href="$structno__os__gpio__platform__ops.html" title="Structure holding gpio function pointers that point to the platform specific function." alt="" coords="5,56,193,83"/>
+<area shape="rect" id="node5" href="$structno__os__spi__init__param.html" title="Structure holding the parameters for SPI initialization." alt="" coords="339,107,501,133"/>
+<area shape="rect" id="node6" href="$structno__os__spi__platform__ops.html" title="Structure holding SPI function pointers that point to the platform specific function." alt="" coords="10,107,189,133"/>
+<area shape="rect" id="node7" href="$structspi__engine__offload__init__param.html" title="Structure containing the init parameters needed by the offload module." alt="" coords="348,158,492,199"/>
+<area shape="rect" id="node8" href="$structno__os__pwm__init__param.html" title="Structure containing the init parameters needed by the PWM generator." alt="" coords="332,224,508,251"/>
+</map>

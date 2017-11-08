@@ -1,0 +1,14 @@
+<map id="drivers/adc/ad7689/ad7689.c" name="drivers/adc/ad7689/ad7689.c">
+<area shape="rect" id="node1" title="Source file for the ad7689 driver." alt="" coords="253,5,399,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,169,76,196"/>
+<area shape="rect" id="node3" href="$ad7689_8h.html" title="Header file for the ad7689 driver." alt="" coords="223,95,306,121"/>
+<area shape="rect" id="node7" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="96,95,196,121"/>
+<area shape="rect" id="node8" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="469,95,578,121"/>
+<area shape="rect" id="node10" href="$no__os__print__log_8h.html" title="Print messages helpers." alt="" coords="602,95,738,121"/>
+<area shape="rect" id="node12" href="$no__os__delay_8h.html" title="Header file of Delay functions." alt="" coords="331,95,444,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="279,244,349,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="151,169,234,196"/>
+<area shape="rect" id="node6" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="309,169,407,196"/>
+<area shape="rect" id="node9" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="489,169,557,196"/>
+<area shape="rect" id="node11" title=" " alt="" coords="637,169,703,196"/>
+</map>

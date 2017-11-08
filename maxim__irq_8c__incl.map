@@ -1,0 +1,13 @@
+<map id="drivers/platform/maxim/maxim_irq.c" name="drivers/platform/maxim/maxim_irq.c">
+<area shape="rect" id="node1" title="Implementation of external irq driver." alt="" coords="131,5,309,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="242,319,313,345"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,95,162,121"/>
+<area shape="rect" id="node4" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="186,95,254,121"/>
+<area shape="rect" id="node5" href="$no__os__irq_8h.html" title="Header file of IRQ interface." alt="" coords="5,244,101,271"/>
+<area shape="rect" id="node6" href="$maxim_2irq__extra_8h.html" title="Header file for maxim irq specifics." alt="" coords="278,95,370,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="414,244,517,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="186,169,249,196"/>
+<area shape="rect" id="node9" href="$maxim_2gpio__extra_8h.html" title="Header file for maxim gpio specifics." alt="" coords="273,169,375,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="256,244,339,271"/>
+<area shape="rect" id="node11" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="125,244,232,271"/>
+</map>

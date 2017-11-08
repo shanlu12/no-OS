@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['x_28352',['x',['../structadxl372__xyz__accel__data.html#a0a9bd2297cdbaa9230fdd7359cd41bd7',1,'adxl372_xyz_accel_data']]],
+  ['x_5foffset_28353',['x_offset',['../structadxl355__dev.html#a4659d560f9c32105edcfb85dc1a48c42',1,'adxl355_dev']]],
+  ['xcvr_28354',['xcvr',['../structjesd204__clk.html#a45cf326105abc4bf2cad448b9f2a3adf',1,'jesd204_clk']]],
+  ['xil_5fgpio_5firq_5fops_28355',['xil_gpio_irq_ops',['../gpio__irq__extra_8h.html#a17d6bb79ee4f7fdd7e003f28e1932aa6',1,'xil_gpio_irq_ops():&#160;xilinx_gpio_irq.c'],['../xilinx__gpio__irq_8c.html#a17d6bb79ee4f7fdd7e003f28e1932aa6',1,'xil_gpio_irq_ops():&#160;xilinx_gpio_irq.c']]],
+  ['xil_5fgpio_5fops_28356',['xil_gpio_ops',['../xilinx_2gpio__extra_8h.html#a91cbfdce3621e8492d7b6551e6a4cc70',1,'xil_gpio_ops():&#160;xilinx_gpio.c'],['../xilinx__gpio_8c.html#a91cbfdce3621e8492d7b6551e6a4cc70',1,'xil_gpio_ops():&#160;xilinx_gpio.c']]],
+  ['xil_5fgpio_5fparam_28357',['xil_gpio_param',['../ad7616__sdz_8c.html#af42d07150021f322d10a10b10154182a',1,'ad7616_sdz.c']]],
+  ['xil_5fi2c_5fops_28358',['xil_i2c_ops',['../xilinx_2i2c__extra_8h.html#a705159a74d9b4b0a2b3b1ff7bc99ab4f',1,'xil_i2c_ops():&#160;xilinx_i2c.c'],['../xilinx__i2c_8c.html#a705159a74d9b4b0a2b3b1ff7bc99ab4f',1,'xil_i2c_ops():&#160;xilinx_i2c.c']]],
+  ['xil_5fi2c_5ftype_28359',['xil_i2c_type',['../xilinx_2i2c__extra_8h.html#a92ac41a0e7575e102d860aecd7eeab8d',1,'i2c_extra.h']]],
+  ['xil_5firq_5fops_28360',['xil_irq_ops',['../xilinx_2irq__extra_8h.html#aea873616915c806e3c281852f97437aa',1,'xil_irq_ops():&#160;xilinx_irq.c'],['../xilinx__irq_8c.html#aea873616915c806e3c281852f97437aa',1,'xil_irq_ops():&#160;xilinx_irq.c']]],
+  ['xil_5fspi_5fops_28361',['xil_spi_ops',['../spi__engine_8h.html#a5326f0cef2ffaec87a01aa3d05008153',1,'xil_spi_ops():&#160;xilinx_spi.c'],['../xilinx_2spi__extra_8h.html#a5326f0cef2ffaec87a01aa3d05008153',1,'xil_spi_ops():&#160;xilinx_spi.c'],['../xilinx__spi_8c.html#a5326f0cef2ffaec87a01aa3d05008153',1,'xil_spi_ops():&#160;xilinx_spi.c']]],
+  ['xil_5fspi_5freg_5fops_5fpl_28362',['xil_spi_reg_ops_pl',['../xilinx_2spi__extra_8h.html#aee857bf010f43ff492e94f864890d34e',1,'spi_extra.h']]],
+  ['xint_5fconf_28363',['xint_conf',['../unionirq__config.html#ac3208ae1ba53a9a8b53f5e1a8c9a0237',1,'irq_config']]],
+  ['xlx_5fxcvr_28364',['xlx_xcvr',['../structadxcvr.html#acddfe09bea9d83363985b07b328fb9ad',1,'adxcvr']]],
+  ['xml_28365',['xml',['../structiiod__init__param.html#a0354b484d7401dc029747b33d059c4fc',1,'iiod_init_param::xml()'],['../structiiod__desc.html#a526ecd87495f9917758fb5ba3fcd62b6',1,'iiod_desc::xml()']]],
+  ['xml_5fdesc_28366',['xml_desc',['../structiio__desc.html#a9831f807ec747c5d562ad32b552a9aae',1,'iio_desc']]],
+  ['xml_5flen_28367',['xml_len',['../structiiod__init__param.html#aa91bcc98169f50061405586fab325767',1,'iiod_init_param::xml_len()'],['../structiiod__desc.html#af1a8f6662d272590705c98e813da5d00',1,'iiod_desc::xml_len()']]],
+  ['xml_5fsize_28368',['xml_size',['../structiio__desc.html#a8b7414c910afa860ffd11d0458942e99',1,'iio_desc']]],
+  ['xo_5fdisable_5fuse_5fext_5frefclk_5fenable_28369',['xo_disable_use_ext_refclk_enable',['../struct_a_d9361___init_param.html#a1e98393db2dc963dff505a8cb7bfa99f',1,'AD9361_InitParam']]]
+];

@@ -1,0 +1,10 @@
+<map id="drivers/platform/xilinx/no_os_timer.c" name="drivers/platform/xilinx/no_os_timer.c">
+<area shape="rect" id="node1" title="Timer and GIC control module source." alt="" coords="124,5,291,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,76,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="102,169,219,196"/>
+<area shape="rect" id="node4" href="$no__os__timer_8h.html" title="Timer control module header." alt="" coords="287,95,400,121"/>
+<area shape="rect" id="node6" href="$xilinx_2timer__extra_8h.html" title="Timer control module header." alt="" coords="152,95,263,121"/>
+<area shape="rect" id="node7" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="425,95,534,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="308,169,379,196"/>
+<area shape="rect" id="node8" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="445,169,513,196"/>
+</map>

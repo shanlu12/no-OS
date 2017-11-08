@@ -1,0 +1,13 @@
+<map id="drivers/platform/maxim/maxim_rtc.c" name="drivers/platform/maxim/maxim_rtc.c">
+<area shape="rect" id="node1" title="Implementation of RTC driver." alt="" coords="201,5,379,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="199,169,269,196"/>
+<area shape="rect" id="node3" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="24,95,92,121"/>
+<area shape="rect" id="node4" href="$no__os__irq_8h.html" title="Header file of IRQ interface." alt="" coords="451,169,547,196"/>
+<area shape="rect" id="node6" href="$no__os__rtc_8h.html" title="Header of the RTC interface." alt="" coords="27,169,123,196"/>
+<area shape="rect" id="node7" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="284,95,384,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="409,95,459,121"/>
+<area shape="rect" id="node10" href="$maxim_2rtc__extra_8h.html" title="Header file of RTC driver." alt="" coords="116,95,208,121"/>
+<area shape="rect" id="node11" title=" " alt="" coords="535,95,621,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="252,244,323,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="294,169,377,196"/>
+</map>

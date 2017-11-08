@@ -1,0 +1,19 @@
+<map id="iio/iio.c" name="iio/iio.c">
+<area shape="rect" id="node1" title="Implementation of iio. This module implements read/write ops, required by libtinyiiod and further cal..." alt="" coords="473,5,543,32"/>
+<area shape="rect" id="node2" href="$iio_8h.html" title="Header file of iio." alt="" coords="361,80,412,107"/>
+<area shape="rect" id="node3" href="$iio__types_8h.html" title="Header file for iio_types." alt="" coords="335,155,428,181"/>
+<area shape="rect" id="node6" href="$no__os__circular__buffer_8h.html" title="Circular buffer library header." alt="" coords="497,229,668,256"/>
+<area shape="rect" id="node7" href="$no__os__uart_8h.html" title="Header file of UART interface." alt="" coords="453,155,558,181"/>
+<area shape="rect" id="node8" href="$iiod_8h.html" title="Header file of iiod." alt="" coords="252,155,311,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="437,80,507,107"/>
+<area shape="rect" id="node10" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="129,155,229,181"/>
+<area shape="rect" id="node12" href="$no__os__list_8h.html" title="List library header." alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node13" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="633,80,743,107"/>
+<area shape="rect" id="node15" title=" " alt="" coords="767,80,854,107"/>
+<area shape="rect" id="node16" title=" " alt="" coords="879,80,945,107"/>
+<area shape="rect" id="node17" title=" " alt="" coords="970,80,1041,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="239,229,321,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="349,304,419,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="143,229,214,256"/>
+<area shape="rect" id="node14" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="654,155,722,181"/>
+</map>

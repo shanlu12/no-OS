@@ -1,0 +1,14 @@
+<map id="drivers/adc/ad469x/ad469x.h" name="drivers/adc/ad469x/ad469x.h">
+<area shape="rect" id="node1" title="Header file for ad469x Driver." alt="" coords="230,5,377,47"/>
+<area shape="rect" id="node2" href="$spi__engine_8h.html" title=" " alt="" coords="333,95,437,121"/>
+<area shape="rect" id="node10" href="$clk__axi__clkgen_8h.html" title="Driver for the Analog Devices AXI CLKGEN." alt="" coords="591,169,722,196"/>
+<area shape="rect" id="node11" href="$no__os__pwm_8h.html" title="Header file of PWM Interface." alt="" coords="5,244,116,271"/>
+<area shape="rect" id="node12" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="186,95,293,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="345,319,416,345"/>
+<area shape="rect" id="node4" title=" " alt="" coords="240,169,335,196"/>
+<area shape="rect" id="node5" href="$spi__engine__private_8h.html" title=" " alt="" coords="359,169,517,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="106,319,189,345"/>
+<area shape="rect" id="node7" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="418,244,517,271"/>
+<area shape="rect" id="node8" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="192,244,292,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="213,319,284,345"/>
+</map>

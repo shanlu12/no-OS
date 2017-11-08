@@ -1,0 +1,6 @@
+<map id="drivers/platform/maxim/maxim_stdio.h" name="drivers/platform/maxim/maxim_stdio.h">
+<area shape="rect" id="node1" title="Header file for UART driver stdout/stdin redirection." alt="" coords="19,5,197,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,91,121"/>
+<area shape="rect" id="node3" href="$no__os__uart_8h.html" title="Header file of UART interface." alt="" coords="115,95,221,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="133,169,203,196"/>
+</map>

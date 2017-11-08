@@ -1,0 +1,24 @@
+<map id="projects/cn0531/src/main.c" name="projects/cn0531/src/main.c">
+<area shape="rect" id="node1" title="Implementation of Main Function." alt="" coords="517,5,665,47"/>
+<area shape="rect" id="node2" href="$cn0531_2src_2app__config_8h.html" title="Config file of CN0531 project." alt="" coords="51,95,155,121"/>
+<area shape="rect" id="node3" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="179,95,289,121"/>
+<area shape="rect" id="node5" href="$iio_8h.html" title="Header file of iio." alt="" coords="761,169,811,196"/>
+<area shape="rect" id="node10" href="$no__os__uart_8h.html" title="Header file of UART interface." alt="" coords="857,244,963,271"/>
+<area shape="rect" id="node11" href="$no__os__irq_8h.html" title="Header file of IRQ interface." alt="" coords="1013,169,1109,196"/>
+<area shape="rect" id="node12" title=" " alt="" coords="545,95,637,121"/>
+<area shape="rect" id="node13" title=" " alt="" coords="662,95,763,121"/>
+<area shape="rect" id="node14" href="$ad5791_8h.html" title="Header file of AD5791 Driver." alt="" coords="283,244,366,271"/>
+<area shape="rect" id="node18" href="$iio__ad5791_8h.html" title="Header of AD5791 IIO Driver." alt="" coords="364,95,469,121"/>
+<area shape="rect" id="node21" title=" " alt="" coords="945,95,1040,121"/>
+<area shape="rect" id="node22" href="$iio__app_8h.html" title="Header file of iio_app." alt="" coords="788,95,869,121"/>
+<area shape="rect" id="node4" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="200,169,268,196"/>
+<area shape="rect" id="node6" href="$iio__types_8h.html" title="Header file for iio_types." alt="" coords="739,244,833,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="594,319,677,345"/>
+<area shape="rect" id="node8" title=" " alt="" coords="521,393,592,420"/>
+<area shape="rect" id="node9" href="$no__os__circular__buffer_8h.html" title="Circular buffer library header." alt="" coords="701,319,871,345"/>
+<area shape="rect" id="node15" href="$no__os__delay_8h.html" title="Header file of Delay functions." alt="" coords="5,319,119,345"/>
+<area shape="rect" id="node16" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="143,319,250,345"/>
+<area shape="rect" id="node17" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="274,319,373,345"/>
+<area shape="rect" id="node19" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="469,244,569,271"/>
+<area shape="rect" id="node20" title=" " alt="" coords="448,319,519,345"/>
+</map>

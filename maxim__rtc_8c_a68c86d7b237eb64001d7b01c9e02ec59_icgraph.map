@@ -1,0 +1,4 @@
+<map id="no_os_rtc_start" name="no_os_rtc_start">
+<area shape="rect" id="node1" title="Start the real time clock." alt="" coords="192,5,313,32"/>
+<area shape="rect" id="node2" href="$maxim__rtc_8c.html#ac5b83d441625345a27877f4f19ccd448" title="Set the current count for the real time clock." alt="" coords="5,5,144,32"/>
+</map>

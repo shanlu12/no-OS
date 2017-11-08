@@ -1,0 +1,21 @@
+<map id="projects/ad738x_fmcz/src/ad738x_fmc.c" name="projects/ad738x_fmcz/src/ad738x_fmc.c">
+<area shape="rect" id="node1" title="Implementation of Main Function." alt="" coords="403,5,569,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="453,169,519,196"/>
+<area shape="rect" id="node3" title=" " alt="" coords="119,319,202,345"/>
+<area shape="rect" id="node4" title=" " alt="" coords="557,319,628,345"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,319,76,345"/>
+<area shape="rect" id="node6" title=" " alt="" coords="212,95,307,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="331,95,449,121"/>
+<area shape="rect" id="node8" href="$spi__engine_8h.html" title=" " alt="" coords="817,95,921,121"/>
+<area shape="rect" id="node13" href="$ad738x_8h.html" title="Header file for AD738x Driver." alt="" coords="115,169,198,196"/>
+<area shape="rect" id="node14" href="$ad738x__fmcz_2src_2parameters_8h.html" title="Parameters definition for AD738x&#45;FMCZ." alt="" coords="683,95,793,121"/>
+<area shape="rect" id="node15" href="$no__os__delay_8h.html" title="Header file of Delay functions." alt="" coords="861,244,975,271"/>
+<area shape="rect" id="node16" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="1123,95,1233,121"/>
+<area shape="rect" id="node18" href="$ad738x__fmcz_2src_2app__config_8h.html" title="Config file of AD738x&#45;FMCZ." alt="" coords="995,95,1099,121"/>
+<area shape="rect" id="node19" href="$no__os__print__log_8h.html" title="Print messages helpers." alt="" coords="523,95,659,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="821,169,916,196"/>
+<area shape="rect" id="node10" href="$spi__engine__private_8h.html" title=" " alt="" coords="543,169,701,196"/>
+<area shape="rect" id="node11" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="587,244,686,271"/>
+<area shape="rect" id="node12" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="111,244,211,271"/>
+<area shape="rect" id="node17" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="1144,169,1212,196"/>
+</map>

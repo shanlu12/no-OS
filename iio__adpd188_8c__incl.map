@@ -1,0 +1,19 @@
+<map id="drivers/photo&#45;electronic/adpd188/iio_adpd188.c" name="drivers/photo&#45;electronic/adpd188/iio_adpd188.c">
+<area shape="rect" id="node1" title="Implementation of the ADPD188 IIO driver." alt="" coords="775,5,953,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="519,169,590,196"/>
+<area shape="rect" id="node3" title=" " alt="" coords="410,393,481,420"/>
+<area shape="rect" id="node4" title=" " alt="" coords="937,95,1023,121"/>
+<area shape="rect" id="node5" href="$iio__adpd188_8h.html" title="Header of the ADPD188 IIO driver." alt="" coords="406,95,519,121"/>
+<area shape="rect" id="node15" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="1048,95,1157,121"/>
+<area shape="rect" id="node17" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="693,95,793,121"/>
+<area shape="rect" id="node6" href="$adpd188_8h.html" title="ADPD188 driver header file." alt="" coords="257,244,348,271"/>
+<area shape="rect" id="node11" href="$iio_8h.html" title="Header file of iio." alt="" coords="437,169,488,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="483,319,565,345"/>
+<area shape="rect" id="node8" href="$no__os__i2c_8h.html" title="Header file of I2C Interface." alt="" coords="136,319,235,345"/>
+<area shape="rect" id="node9" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="309,319,408,345"/>
+<area shape="rect" id="node10" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="5,319,112,345"/>
+<area shape="rect" id="node12" href="$iio__types_8h.html" title="Header file for iio_types." alt="" coords="665,244,759,271"/>
+<area shape="rect" id="node14" href="$no__os__uart_8h.html" title="Header file of UART interface." alt="" coords="398,244,503,271"/>
+<area shape="rect" id="node13" href="$no__os__circular__buffer_8h.html" title="Circular buffer library header." alt="" coords="640,319,811,345"/>
+<area shape="rect" id="node16" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="1069,169,1137,196"/>
+</map>

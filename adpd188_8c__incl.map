@@ -1,0 +1,13 @@
+<map id="drivers/photo&#45;electronic/adpd188/adpd188.c" name="drivers/photo&#45;electronic/adpd188/adpd188.c">
+<area shape="rect" id="node1" title="ADPD188 driver implementation." alt="" coords="295,5,472,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="168,95,239,121"/>
+<area shape="rect" id="node3" href="$adpd188_8h.html" title="ADPD188 driver header file." alt="" coords="263,95,354,121"/>
+<area shape="rect" id="node9" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="403,95,513,121"/>
+<area shape="rect" id="node11" href="$no__os__delay_8h.html" title="Header file of Delay functions." alt="" coords="549,95,663,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="273,244,344,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="30,169,113,196"/>
+<area shape="rect" id="node6" href="$no__os__i2c_8h.html" title="Header file of I2C Interface." alt="" coords="137,169,235,196"/>
+<area shape="rect" id="node7" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="259,169,358,196"/>
+<area shape="rect" id="node8" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="382,169,489,196"/>
+<area shape="rect" id="node10" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="513,169,581,196"/>
+</map>

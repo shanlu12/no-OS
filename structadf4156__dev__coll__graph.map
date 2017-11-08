@@ -1,0 +1,9 @@
+<map id="adf4156_dev" name="adf4156_dev">
+<area shape="rect" id="node1" title=" " alt="" coords="241,199,347,225"/>
+<area shape="rect" id="node2" href="$structadf4156__state.html" title=" " alt="" coords="65,95,179,121"/>
+<area shape="rect" id="node3" href="$structadf4156__platform__data.html" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node4" href="$structno__os__spi__desc.html" title="Structure holding SPI descriptor." alt="" coords="233,95,355,121"/>
+<area shape="rect" id="node5" href="$structno__os__spi__platform__ops.html" title="Structure holding SPI function pointers that point to the platform specific function." alt="" coords="205,5,383,32"/>
+<area shape="rect" id="node6" href="$structno__os__gpio__desc.html" title="Structure holding the GPIO descriptor." alt="" coords="408,95,540,121"/>
+<area shape="rect" id="node7" href="$structno__os__gpio__platform__ops.html" title="Structure holding gpio function pointers that point to the platform specific function." alt="" coords="408,5,596,32"/>
+</map>

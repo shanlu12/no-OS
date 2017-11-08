@@ -1,0 +1,24 @@
+<map id="projects/ada4250_ardz/src/ada4250_ardz.c" name="projects/ada4250_ardz/src/ada4250_ardz.c">
+<area shape="rect" id="node1" title="Implementation of Main Function." alt="" coords="439,5,608,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,121,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="146,95,263,121"/>
+<area shape="rect" id="node4" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="287,95,397,121"/>
+<area shape="rect" id="node6" href="$iio_8h.html" title="Header file of iio." alt="" coords="555,169,606,196"/>
+<area shape="rect" id="node12" href="$ada4250__ardz_2src_2parameters_8h.html" title="ADA4250_ardz Parameters Definitions." alt="" coords="730,95,839,121"/>
+<area shape="rect" id="node14" href="$ada4250_8h.html" title="Header file for ada4250 Driver." alt="" coords="303,244,394,271"/>
+<area shape="rect" id="node16" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="477,319,575,345"/>
+<area shape="rect" id="node20" href="$iio__ada4250_8h.html" title="Header file of ada4250 iio." alt="" coords="636,169,749,196"/>
+<area shape="rect" id="node21" title=" " alt="" coords="864,95,959,121"/>
+<area shape="rect" id="node22" href="$iio__app_8h.html" title="Header file of iio_app." alt="" coords="523,95,604,121"/>
+<area shape="rect" id="node5" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="308,169,376,196"/>
+<area shape="rect" id="node7" href="$iio__types_8h.html" title="Header file for iio_types." alt="" coords="653,244,746,271"/>
+<area shape="rect" id="node11" href="$no__os__uart_8h.html" title="Header file of UART interface." alt="" coords="523,244,628,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="85,393,167,420"/>
+<area shape="rect" id="node9" title=" " alt="" coords="491,393,561,420"/>
+<area shape="rect" id="node10" href="$no__os__circular__buffer_8h.html" title="Circular buffer library header." alt="" coords="701,319,871,345"/>
+<area shape="rect" id="node13" title=" " alt="" coords="773,169,865,196"/>
+<area shape="rect" id="node15" title=" " alt="" coords="27,319,95,345"/>
+<area shape="rect" id="node17" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="295,319,402,345"/>
+<area shape="rect" id="node18" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="171,319,271,345"/>
+<area shape="rect" id="node19" title=" " alt="" coords="192,393,263,420"/>
+</map>

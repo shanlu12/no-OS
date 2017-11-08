@@ -1,0 +1,12 @@
+<map id="drivers/platform/stm32/stm32_i2c.c" name="drivers/platform/stm32/stm32_i2c.c">
+<area shape="rect" id="node1" title="Implementation of stm32 i2c driver." alt="" coords="121,5,293,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,169,76,196"/>
+<area shape="rect" id="node3" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="65,95,133,121"/>
+<area shape="rect" id="node4" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="157,95,257,121"/>
+<area shape="rect" id="node7" href="$no__os__i2c_8h.html" title="Header file of I2C Interface." alt="" coords="269,169,367,196"/>
+<area shape="rect" id="node8" href="$stm32__i2c_8h.html" title="Header file for the stm32 i2c driver." alt="" coords="351,95,453,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="283,244,353,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="162,169,245,196"/>
+<area shape="rect" id="node9" href="$stm32__hal_8h.html" title=" " alt="" coords="443,169,545,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="461,244,527,271"/>
+</map>

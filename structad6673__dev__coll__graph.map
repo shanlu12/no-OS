@@ -1,0 +1,9 @@
+<map id="ad6673_dev" name="ad6673_dev">
+<area shape="rect" id="node1" title=" " alt="" coords="565,56,667,83"/>
+<area shape="rect" id="node2" href="$structno__os__spi__desc.html" title="Structure holding SPI descriptor." alt="" coords="323,19,445,45"/>
+<area shape="rect" id="node3" href="$structno__os__spi__platform__ops.html" title="Structure holding SPI function pointers that point to the platform specific function." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node4" href="$structad6673__state.html" title=" " alt="" coords="329,81,439,108"/>
+<area shape="rect" id="node5" href="$structad6673__jesd204b__cfg.html" title="JESD204B interface configuration." alt="" coords="13,56,176,83"/>
+<area shape="rect" id="node6" href="$structad6673__platform__data.html" title="Platform specific information." alt="" coords="10,107,179,133"/>
+<area shape="rect" id="node7" href="$structad6673__fast__detect__cfg.html" title="Fast Detect module configuration." alt="" coords="6,157,183,184"/>
+</map>

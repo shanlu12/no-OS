@@ -1,0 +1,20 @@
+<map id="drivers/adc/ad463x/ad463x.c" name="drivers/adc/ad463x/ad463x.c">
+<area shape="rect" id="node1" title="Implementation of AD463x Driver." alt="" coords="811,5,957,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="14,393,85,420"/>
+<area shape="rect" id="node3" title=" " alt="" coords="939,169,1005,196"/>
+<area shape="rect" id="node4" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="1107,95,1216,121"/>
+<area shape="rect" id="node6" href="$no__os__delay_8h.html" title="Header file of Delay functions." alt="" coords="846,244,959,271"/>
+<area shape="rect" id="node8" href="$ad463x_8h.html" title="Header file of AD463x Driver." alt="" coords="613,95,696,121"/>
+<area shape="rect" id="node18" href="$no__os__print__log_8h.html" title="Print messages helpers." alt="" coords="947,95,1083,121"/>
+<area shape="rect" id="node5" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="1127,169,1195,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="505,393,575,420"/>
+<area shape="rect" id="node9" href="$spi__engine_8h.html" title=" " alt="" coords="423,169,527,196"/>
+<area shape="rect" id="node14" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="43,319,143,345"/>
+<area shape="rect" id="node15" href="$clk__axi__clkgen_8h.html" title="Driver for the Analog Devices AXI CLKGEN." alt="" coords="589,244,720,271"/>
+<area shape="rect" id="node16" href="$no__os__pwm_8h.html" title="Header file of PWM Interface." alt="" coords="167,319,278,345"/>
+<area shape="rect" id="node17" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="655,319,761,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="470,244,565,271"/>
+<area shape="rect" id="node11" href="$spi__engine__private_8h.html" title=" " alt="" coords="237,244,395,271"/>
+<area shape="rect" id="node12" title=" " alt="" coords="181,393,264,420"/>
+<area shape="rect" id="node13" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="404,319,503,345"/>
+</map>

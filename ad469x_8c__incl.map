@@ -1,0 +1,20 @@
+<map id="drivers/adc/ad469x/ad469x.c" name="drivers/adc/ad469x/ad469x.c">
+<area shape="rect" id="node1" title="Implementation of ad69x Driver." alt="" coords="270,5,417,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,76,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,95,167,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="213,393,284,420"/>
+<area shape="rect" id="node5" href="$ad469x_8h.html" title="Header file for ad469x Driver." alt="" coords="354,95,437,121"/>
+<area shape="rect" id="node6" href="$spi__engine_8h.html" title=" " alt="" coords="563,169,667,196"/>
+<area shape="rect" id="node12" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="243,319,343,345"/>
+<area shape="rect" id="node16" href="$no__os__delay_8h.html" title="Header file of Delay functions." alt="" coords="940,244,1053,271"/>
+<area shape="rect" id="node17" href="$no__os__error_8h.html" title="Error codes definition." alt="" coords="742,95,851,121"/>
+<area shape="rect" id="node13" href="$clk__axi__clkgen_8h.html" title="Driver for the Analog Devices AXI CLKGEN." alt="" coords="382,244,513,271"/>
+<area shape="rect" id="node14" href="$no__os__pwm_8h.html" title="Header file of PWM Interface." alt="" coords="367,319,477,345"/>
+<area shape="rect" id="node15" href="$no__os__gpio_8h.html" title="Header file of GPIO Interface." alt="" coords="433,169,539,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="624,393,695,420"/>
+<area shape="rect" id="node8" title=" " alt="" coords="769,244,864,271"/>
+<area shape="rect" id="node9" href="$spi__engine__private_8h.html" title=" " alt="" coords="537,244,694,271"/>
+<area shape="rect" id="node10" title=" " alt="" coords="381,393,463,420"/>
+<area shape="rect" id="node11" href="$no__os__spi_8h.html" title="Header file of SPI Interface." alt="" coords="654,319,753,345"/>
+<area shape="rect" id="node18" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="763,169,831,196"/>
+</map>

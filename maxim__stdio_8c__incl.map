@@ -1,0 +1,14 @@
+<map id="drivers/platform/maxim/maxim_stdio.c" name="drivers/platform/maxim/maxim_stdio.c">
+<area shape="rect" id="node1" title="Implementation file of MAX32660 UART driver stdout/stdin redirection." alt="" coords="355,5,532,47"/>
+<area shape="rect" id="node2" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="5,95,73,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="301,244,372,271"/>
+<area shape="rect" id="node4" title=" " alt="" coords="149,95,220,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="244,95,315,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="339,95,406,121"/>
+<area shape="rect" id="node7" href="$maxim__stdio_8h.html" title="Header file for UART driver stdout/stdin redirection." alt="" coords="481,95,600,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="401,169,486,196"/>
+<area shape="rect" id="node9" href="$no__os__uart_8h.html" title="Header file of UART interface." alt="" coords="511,169,616,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="675,95,766,121"/>
+<area shape="rect" id="node11" title=" " alt="" coords="791,95,851,121"/>
+<area shape="rect" id="node12" title=" " alt="" coords="875,95,950,121"/>
+</map>

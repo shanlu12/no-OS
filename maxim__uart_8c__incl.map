@@ -1,0 +1,14 @@
+<map id="drivers/platform/maxim/maxim_uart.c" name="drivers/platform/maxim/maxim_uart.c">
+<area shape="rect" id="node1" title="Source file of UART driver for STM32." alt="" coords="279,5,456,47"/>
+<area shape="rect" id="node2" href="$errno_8h.html" title="Error macro definition for ARM Compiler." alt="" coords="5,95,73,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="561,169,632,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="149,95,239,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="119,169,179,196"/>
+<area shape="rect" id="node6" href="$maxim__uart_8h.html" title="Header file of UART driver." alt="" coords="264,95,377,121"/>
+<area shape="rect" id="node7" href="$no__os__irq_8h.html" title="Header file of IRQ interface." alt="" coords="370,169,466,196"/>
+<area shape="rect" id="node10" href="$no__os__uart_8h.html" title="Header file of UART interface." alt="" coords="453,95,559,121"/>
+<area shape="rect" id="node11" href="$no__os__util_8h.html" title="Implementation of utility functions." alt="" coords="635,95,735,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="243,169,345,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="471,244,541,271"/>
+<area shape="rect" id="node12" title=" " alt="" coords="707,169,790,196"/>
+</map>
