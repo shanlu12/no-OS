@@ -541,6 +541,10 @@ int32_t ad713x_init(struct ad713x_dev **device,
 
 	dev->dev_id = init_param->dev_id;
 
+	ret = ad713x_spi_reg_read(dev, AD713X_REG_CHIP_TYPE, &data);
+	if (IS_ERR_VALUE(ret))
+		goto error_gpio;
+
 	ret = ad713x_spi_reg_read(dev, AD713X_REG_DEVICE_CONFIG, &data);
 	if (IS_ERR_VALUE(ret))
 		goto error_gpio;
