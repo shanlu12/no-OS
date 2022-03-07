@@ -7,30 +7,67 @@
 #include "no_os_delay.h"
 #include "no_os_util.h"
 #include "no_os_print_log.h"
+
+#ifdef STM32_PLATFORM
 #include "stm32_spi.h"
 #include "stm32_gpio.h"
 #include "stm32_uart.h"
 #include "stm32_uart_stdio.h"
+#endif
+
+#ifdef MAXIM_PLATFORM
+#include "spi_extra.h"
+#include "gpio_extra.h"
+#include "maxim_uart.h"
+#include "maxim_stdio.h"
+#endif
+
 #include "adxl355.h"
 
-#define SPI_DEVICE_ID	 1
-#define SPI_CS			15
-#define SPI_CS_PORT		GPIOA
+#ifdef STM32_PLATFORM
+#define UART_ID		5
+#define SPI_DEVICE_ID	1
+#define SPI_CS		15
+#define SPI_CS_PORT	GPIOA
+#endif
 
-UART_HandleTypeDef huart5;
+#ifdef MAXIM_PLATFORM
+#define UART_ID		1
+#define SPI_DEVICE_ID	0
+#define SPI_CS		0
+#endif
+
+#ifdef STM32_PLATFORM
+extern UART_HandleTypeDef huart5;
+#endif
 
 int main ()
 {
 	struct no_os_uart_desc *uart;
 	struct adxl355_dev *adxl355;
-
+	struct no_os_spi_platform_ops *spi_ops;
 	int ret;
-	stm32_init();
 
+#ifdef STM32_PLATFORM
+	stm32_init();
 	struct stm32_spi_init_param xsip  = {
 		.chip_select_port = SPI_CS_PORT,
 		.get_input_clock = HAL_RCC_GetPCLK1Freq,
 	};
+	struct stm32_uart_init_param xuip = {
+		.huart = &huart5,
+	};
+	spi_ops = &stm32_spi_ops;
+#elif MAXIM_PLATFORM
+	struct max_uart_init_param xuip = {
+		.flow = UART_FLOW_DIS
+	};
+	struct max_spi_init_param xsip = {
+		.numSlaves = 1,
+		.polarity = SPI_SS_POL_LOW
+	};
+	spi_ops = &max_spi_ops;
+#endif
 
 	struct no_os_spi_init_param sip = {
 		.device_id = SPI_DEVICE_ID,
@@ -38,7 +75,7 @@ int main ()
 		.bit_order = NO_OS_SPI_BIT_ORDER_MSB_FIRST,
 		.mode = NO_OS_SPI_MODE_0,
 		.extra = &xsip,
-		.platform_ops = &stm32_spi_ops,
+		.platform_ops = spi_ops,
 		.chip_select = SPI_CS,
 	};
 
@@ -47,11 +84,8 @@ int main ()
 		.comm_type = ADXL355_SPI_COMM,
 	};
 
-	struct stm32_uart_init_param xuip = {
-		.huart = &huart5,
-	};
 	struct no_os_uart_init_param uip = {
-		.device_id = 5,
+		.device_id = UART_ID,
 		.baud_rate = 115200,
 		.size = NO_OS_UART_CS_8,
 		.parity = NO_OS_UART_PAR_NO,
@@ -63,7 +97,11 @@ int main ()
 	if (ret < 0)
 		goto error;
 
+#ifdef STM32_PLATFORM
 	stm32_uart_stdio(uart);
+#elif MAXIM_PLATFORM
+	maxim_uart_stdio(uart);
+#endif
 
 	ret = adxl355_init(&adxl355, init_data_adxl355);
 	if (ret < 0)
