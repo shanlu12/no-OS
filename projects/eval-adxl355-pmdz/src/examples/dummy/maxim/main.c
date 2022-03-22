@@ -7,105 +7,27 @@
 #include "no_os_delay.h"
 #include "no_os_util.h"
 #include "no_os_print_log.h"
-#include "stm32_spi.h"
-#include "stm32_gpio.h"
-#include "stm32_uart.h"
-#include "stm32_uart_stdio.h"
 #include "adxl355.h"
-#ifdef IIO_SUPPORT
-#include "app_config.h"
-#include "parameters.h"
-#include "iio_app.h"
-#include "iio_adxl355.h"
-#endif
-
-#define SPI_DEVICE_ID	 1
-#define SPI_CS			15
-#define SPI_CS_PORT		GPIOA
-
-#ifndef IIO_SUPPORT
-extern UART_HandleTypeDef huart5;
-#else
-#define DATA_BUFFER_SIZE 400
-
-// For output data you will need DATA_BUFFER_SIZE*4*sizeof(int32_t)
-uint8_t iio_data_buffer[DATA_BUFFER_SIZE*4*sizeof(int)];
-#endif
+#include "platform_includes.h"
+#include "common_data.h"
 
 int main ()
 {
-#ifdef IIO_SUPPORT
-	struct adxl355_iio_dev *adxl355_iio_desc;
-	struct adxl355_iio_init_param adxl355_init_par;
-	struct iio_data_buffer accel_buff = {
-		.buff = (void *)iio_data_buffer,
-		.size = DATA_BUFFER_SIZE*4*sizeof(int)
-	};
-#else
+
 	struct no_os_uart_desc *uart;
 	struct adxl355_dev *adxl355;
-#endif
-
 	int ret;
-	struct stm32_spi_init_param xsip  = {
-		.chip_select_port = SPI_CS_PORT,
-		.get_input_clock = HAL_RCC_GetPCLK1Freq,
-	};
-
-	struct no_os_spi_init_param sip = {
-		.device_id = SPI_DEVICE_ID,
-		.max_speed_hz = 4000000,
-		.bit_order = NO_OS_SPI_BIT_ORDER_MSB_FIRST,
-		.mode = NO_OS_SPI_MODE_0,
-		.extra = &xsip,
-		.platform_ops = &stm32_spi_ops,
-		.chip_select = SPI_CS,
-	};
-
-	struct adxl355_init_param init_data_adxl355 = {
-		.comm_init.spi_init = sip,
-		.comm_type = ADXL355_SPI_COMM,
-	};
-
-#ifdef IIO_SUPPORT
-	adxl355_init_par.adxl355_initial = &init_data_adxl355;
-#else
-	struct stm32_uart_init_param xuip = {
-		.huart = &huart5,
-	};
-	struct no_os_uart_init_param uip = {
-		.device_id = 5,
-		.baud_rate = 115200,
-		.size = NO_OS_UART_CS_8,
-		.parity = NO_OS_UART_PAR_NO,
-		.stop = NO_OS_UART_STOP_1_BIT,
-		.extra = &xuip,
-	};
-#endif
 
 	stm32_init();
 
-#ifdef IIO_SUPPORT
-	ret = adxl355_iio_init(&adxl355_iio_desc, &adxl355_init_par);
-	if (ret != SUCCESS)
-		return ret;
-
-	struct iio_app_device iio_devices[] = {
-		{
-			.name = "adxl355",
-			.dev = adxl355_iio_desc,
-			.dev_descriptor = adxl355_iio_desc->iio_dev,
-			.read_buff = &accel_buff,
-		}
-	};
-
-	return iio_app_run(iio_devices, NO_OS_ARRAY_SIZE(iio_devices));
-#else
 	ret = no_os_uart_init(&uart, &uip);
 	if (ret < 0)
 		goto error;
 
 	stm32_uart_stdio(uart);
+
+	xsip.get_input_clock = HAL_RCC_GetPCLK1Freq;
+	init_data_adxl355.comm_init.spi_init = sip;
 
 	ret = adxl355_init(&adxl355, init_data_adxl355);
 	if (ret < 0)
@@ -178,5 +100,5 @@ int main ()
 error:
 	pr_info("Error!\n");
 	return 0;
-#endif
 }
+

@@ -1,0 +1,76 @@
+Makefile - contains the selection of the example
+
+src.mk  - remove all platform specific includes and iio specific
+	- it should contain common includes for all platforms and for all examples (e.g.: no-os includes, device includes)
+	
+The current structure is as follows:
+
+// Will contain all the needed files for each used platform
+include $(PROJECT)/src/platform/$(PLATFORM)/platform_src.mk
+// Will contain all needed files for selected examples (can be more than one selected at the same time)
+include $(PROJECT)/src/examples/examples_src.mk
+
+// Common init data which can be used in more than 1 examples
+INCS += $(PROJECT)/src/common/common_data.h
+SRCS += $(PROJECT)/src/common/common_data.c
+
+// Platform specific includes based on the selected platform (only one can be selected at a time)
+INCS += $(PROJECT)/src/platform/platform_includes.h
+
+// Platform specific parameters, contains init data used for platform initialization
+INCS += $(PROJECT)/src/platform/$(PLATFORM)/parameters.h
+SRCS += $(PROJECT)/src/platform/$(PLATFORM)/parameters.c 
+
+New folder structure for src
+.
+├── common
+│   ├── common_data.c
+│   └── common_data.h
+├── examples
+│   ├── dummy
+│   │   ├── maxim
+│   │   │   └── main.c
+│   │   └── stm32
+│   │       └── main.c
+│   ├── examples_src.mk
+│   └── iio_example
+│       ├── maxim
+│       │   └── main.c
+│       └── stm32
+│           └── main.c
+└── platform
+    ├── maxim
+    │   ├── parameters.c
+    │   ├── parameters.h
+    │   └── platform_src.mk
+    ├── platform_includes.h
+    └── stm32
+        ├── parameters.c
+        ├── parameters.h
+        └── platform_src.mk
+        
+No app_config needed
+
+Common data should be, as much as possible, platform independent (no-os structures used with extra defined in parameters.c)
+The structures will be made visible in main.c using extern keyword.
+
+Platform will contain folders with each supported platform (e.g. maxim, stm32, etc.)
+Each platform folder will contain 3 files: parameters.c, parameters.h and platform_src.mk.
+platform_src.mk will contain the specific platform files
+
+parameters.c and parameters.h will contain platform specific data which is going to be used by the common_data.c and main file.
+
+Platform data which is used in common_data, shall have common naming for all the platforms (same variable names, same macro names):
+e.g.: UART_DEVICE_ID, SPI_DEVICE_ID, for extra:  xsip, xuip, etc., for platform operations SPI_OPS, etc.
+
+The main file will contain the initialization of platform specific functionalities and the implemented example.
+
+platform_includes.h is the header used in main.c and in parameters. it should be adapted when support for a new platform is added.
+
+Advantages:
+app config not needed, selection is done by makefile, no compiler switch for each example
+Each main file will contain a single example
+
+Disadvantages:
+More examples cannot be used at the same time, will lead to many lines of code being duplicated.
+Each example will contain also platform initialization.

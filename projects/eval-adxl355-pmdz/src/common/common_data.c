@@ -1,6 +1,6 @@
 /***************************************************************************//**
- *   @file   app_config.h
- *   @brief  Config file of IIO ADXL355 project.
+ *   @file   common_data.c
+ *   @brief  Defines common data to be used by eval-adxl355-pmdz examples.
  *   @author RBolboac (ramona.bolboaca@analog.com)
 ********************************************************************************
  * Copyright 2022(c) Analog Devices, Inc.
@@ -36,17 +36,38 @@
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *******************************************************************************/
-#ifndef CONFIG_H_
-#define CONFIG_H_
 
-//#define XILINX_PLATFORM
-//#define ALTERA_PLATFORM
-//#define ADUCM_PLATFORM
+/******************************************************************************/
+/***************************** Include Files **********************************/
+/******************************************************************************/
+#include "common_data.h"
+#include "platform_includes.h"
 
-#ifdef ENABLE_IIO_NETWORK
-//#define USE_TCP_SOCKET
+/******************************************************************************/
+/********************** Macros and Constants Definitions **********************/
+/******************************************************************************/
+#ifndef IIO_SUPPORT
+struct no_os_uart_init_param uip = {
+	.device_id = UART_DEVICE_ID,
+	.baud_rate = 115200,
+	.size = NO_OS_UART_CS_8,
+	.parity = NO_OS_UART_PAR_NO,
+	.stop = NO_OS_UART_STOP_1_BIT,
+	.extra = &xuip,
+};
 #endif
 
-//#define ENABLE_LOOPBACK
+struct no_os_spi_init_param sip = {
+	.device_id = SPI_DEVICE_ID,
+	.max_speed_hz = 4000000,
+	.bit_order = NO_OS_SPI_BIT_ORDER_MSB_FIRST,
+	.mode = NO_OS_SPI_MODE_0,
+	.extra = &xsip,
+	.platform_ops = &stm32_spi_ops,
+	.chip_select = SPI_CS,
+};
 
-#endif
+struct adxl355_init_param init_data_adxl355 = {
+	.comm_type = ADXL355_SPI_COMM,
+};
+
