@@ -54,8 +54,8 @@
 #define AXI_DMAC_IRQ_EOT			NO_OS_BIT(1)
 
 #define AXI_DMAC_REG_INTF_DESC		0x010
-#define AXI_DMAC_DMA_TYPE_DEST		GENMASK(5,4)
-#define AXI_DMAC_DMA_TYPE_SRC		GENMASK(13,12)
+#define AXI_DMAC_DMA_TYPE_DEST		NO_OS_GENMASK(5,4)
+#define AXI_DMAC_DMA_TYPE_SRC		NO_OS_GENMASK(13,12)
 //Define macro for src and dest
 
 #define AXI_DMAC_REG_CTRL			0x400
@@ -65,8 +65,8 @@
 
 #define AXI_DMAC_REG_TRANSFER_ID		0x404
 #define AXI_DMAC_REG_TRANSFER_SUBMIT	0x408
-#define AXI_DMAC_TRANSFER_SUBMIT		BIT(0)
-#define AXI_DMAC_QUEUE_FULL				BIT(0)
+#define AXI_DMAC_TRANSFER_SUBMIT		NO_OS_BIT(0)
+#define AXI_DMAC_QUEUE_FULL				NO_OS_BIT(0)
 #define AXI_DMAC_REG_FLAGS				0x40c
 #define AXI_DMAC_REG_DEST_ADDRESS		0x410
 #define AXI_DMAC_REG_SRC_ADDRESS		0x414
@@ -141,7 +141,7 @@ int32_t axi_dmac_init(struct axi_dmac **adc_core,
 		      const struct axi_dmac_init *init);
 int32_t axi_dmac_remove(struct axi_dmac *dmac);
 int32_t axi_dmac_transfer_start(struct axi_dmac *dmac,
-		      struct axi_dma_transfer *dma_transfer);
+				struct axi_dma_transfer *dma_transfer);
 int32_t axi_dmac_transfer_wait_completion(struct axi_dmac *dmac);
 void axi_dmac_transfer_stop(struct axi_dmac *dmac);
 

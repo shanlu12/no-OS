@@ -711,18 +711,18 @@ int main(void)
 		return status;
 
 	/* Set callback for MEM2MEM DMAC interrupt. */
-	struct callback_desc mem_dmac_callback = {
+	struct no_os_callback_desc mem_dmac_callback = {
 		.ctx = mem_dmac,
 		.callback = axi_dmac_mem_to_mem_isr,
 		.config = NULL
 	};
 
-	status = irq_register_callback(irq_desc,
-				       XPAR_FABRIC_MEM2MEM_DMA_IRQ_INTR, &mem_dmac_callback);
+	status = no_os_irq_register_callback(irq_desc,
+					     XPAR_FABRIC_MEM2MEM_DMA_IRQ_INTR, &mem_dmac_callback);
 	if(status < 0)
 		return status;
 
-	status = irq_enable(irq_desc, XPAR_FABRIC_MEM2MEM_DMA_IRQ_INTR);
+	status = no_os_irq_enable(irq_desc, XPAR_FABRIC_MEM2MEM_DMA_IRQ_INTR);
 	if(status < 0)
 		return status;
 #endif
@@ -762,7 +762,8 @@ int main(void)
 		}
 	}
 
-	Xil_DCacheFlushRange((uintptr_t)address_mem, sizeof(uint32_t)*8192*multiplications);
+	Xil_DCacheFlushRange((uintptr_t)address_mem,
+			     sizeof(uint32_t)*8192*multiplications);
 
 //	/* Uncomment if sine_lut_iq is desired to be sent for testing purposes */
 //	extern const uint32_t sine_lut_iq[1024];
@@ -788,7 +789,8 @@ int main(void)
 	axi_dmac_transfer_start(tx_dmac, &transfer);
 
 	/* Flush cache data. */
-	Xil_DCacheInvalidateRange((uintptr_t)address_mem, sizeof(uint32_t)*8192*multiplications);
+	Xil_DCacheInvalidateRange((uintptr_t)address_mem,
+				  sizeof(uint32_t)*8192*multiplications);
 
 	/* Internal loopback for receiving the same data that is transmitted
 	 * (for debugging purposes) */
@@ -796,15 +798,15 @@ int main(void)
 
 	/* Debug message */
 	printf("Sent data: address=%#x samples=%lu channels=%u bits=%u bytes=%lu. To read from mem: %lu.\n",
-		   (uintptr_t)address_mem, multiplications*sizeof(uint32_t)*8192/8,
-		   tx_dac_init.num_channels,
-		   8 * sizeof(uint32_t),
-		   to_send,
-		   to_send/2);
+	       (uintptr_t)address_mem, multiplications*sizeof(uint32_t)*8192/8,
+	       tx_dac_init.num_channels,
+	       8 * sizeof(uint32_t),
+	       to_send,
+	       to_send/2);
 	/*------------------------------------------------------------------------*/
 
 	/* Wait for the system to be ready. */
-	mdelay(1000);
+	no_os_mdelay(1000);
 #endif
 #endif
 #ifdef FMCOMMS5
@@ -843,13 +845,12 @@ int main(void)
 	Xil_DCacheInvalidateRange((uintptr_t)address_mem_read, to_read);
 
 	/* Read the data from the ADC DMA. */
-	//axi_dmac_transfer(rx_dmac, (uintptr_t)address_mem_read, to_read);
 	axi_dmac_transfer_start(rx_dmac, &read_transfer);
 
 	/* Wait until transfer finishes */
 	status = axi_dmac_transfer_wait_completion(rx_dmac);
 	if(status < 0)
-			return status;
+		return status;
 
 	/* Clear the cache. */
 	Xil_DCacheInvalidateRange((uintptr_t)address_mem_read, to_read);
@@ -868,8 +869,8 @@ int main(void)
 						  ad9361_phy->rx_adc->num_channels));
 #endif
 	printf("DAC_DMA_EXAMPLE: address=%#x samples=%lu channels=%u bits=%u. No. of bytes read from mem: %lu \n",
-		   (uintptr_t)address_mem_read, to_read/8, rx_adc_init.num_channels,
-		   8 * sizeof(uint32_t), to_read/2);
+	       (uintptr_t)address_mem_read, to_read/8, rx_adc_init.num_channels,
+	       8 * sizeof(uint32_t), to_read/2);
 	/*------------------------------------------------------------------------*/
 #endif
 
@@ -920,20 +921,20 @@ int main(void)
 	if(status < 0)
 		return status;
 
-	mdelay(10);
+	no_os_mdelay(10);
 
 	/* Stop DMA component */
 	axi_dmac_transfer_stop(mem_dmac);
 
 	/* Debug message */
 	printf("Sent data: from addr=%#x to addr=%#x. Spl=%lu chan=%u bits=%u. Bytes=%lu. To read from mem: %lu.\n",
-		   (uintptr_t)src_address_mem,
-		   (uintptr_t)dest_address_mem,
-		   to_transfer_mem/8,
-		   tx_dac_init.num_channels,
-		   8 * sizeof(uint32_t),
-		   to_transfer_mem,
-		   to_transfer_mem/2);
+	       (uintptr_t)src_address_mem,
+	       (uintptr_t)dest_address_mem,
+	       to_transfer_mem/8,
+	       tx_dac_init.num_channels,
+	       8 * sizeof(uint32_t),
+	       to_transfer_mem,
+	       to_transfer_mem/2);
 
 	/*------------------------------------------------------------------------*/
 #endif

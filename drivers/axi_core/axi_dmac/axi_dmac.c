@@ -110,7 +110,7 @@ void axi_dmac_mem_to_dev_isr(void *instance)
 
 	if (reg_val & AXI_DMAC_IRQ_SOT) {
 		if ((dmac->transfer.cyclic == CYCLIC) &&
-			(dmac->next_src_addr >= (dmac->init_addr + dmac->transfer.size - 1))) {
+		    (dmac->next_src_addr >= (dmac->init_addr + dmac->transfer.size - 1))) {
 			dmac->remaining_size = dmac->transfer.size;
 			dmac->next_src_addr = dmac->init_addr;
 		}
@@ -277,7 +277,7 @@ static int32_t axi_dmac_detect_caps(struct axi_dmac *dmac)
 		dmac->direction = DMA_MEM_TO_MEM;
 	} else {
 		printf("Destination and source memory-mapped interfaces not supported.\n");
-		return FAILURE;
+		return -1;
 	}
 	return 0;
 }
@@ -301,7 +301,7 @@ int32_t axi_dmac_init(struct axi_dmac **dmac_core,
 
 	int32_t status = axi_dmac_detect_caps(*dmac_core);
 	if (status < 0)
-		return FAILURE;
+		return -1;
 
 	return 0;
 }
@@ -322,7 +322,8 @@ int32_t axi_dmac_remove(struct axi_dmac *dmac)
 /*******************************************************************************
  * @brief starts a DMA transfer
  *******************************************************************************/
-int32_t axi_dmac_transfer_start(struct axi_dmac *dmac, struct axi_dma_transfer *dma_transfer)
+int32_t axi_dmac_transfer_start(struct axi_dmac *dmac,
+				struct axi_dma_transfer *dma_transfer)
 {
 	uint32_t reg_val, burst_size;
 
@@ -342,14 +343,15 @@ int32_t axi_dmac_transfer_start(struct axi_dmac *dmac, struct axi_dma_transfer *
 	/* If HW cyclic transfer selected and not available, show error */
 	if ((!dmac->hw_cyclic) && (dma_transfer->cyclic == CYCLIC)) {
 		printf("Transfer mode not supported!\n");
-		return FAILURE;
+		return -1;
 	}
 
 	/* Cyclic transfers not possible for DEV_TO_MEM and MEM_TO_MEM transmissions. */
-	if ((dmac->direction == DMA_DEV_TO_MEM) || (dmac->direction == DMA_MEM_TO_MEM)) {
+	if ((dmac->direction == DMA_DEV_TO_MEM)
+	    || (dmac->direction == DMA_MEM_TO_MEM)) {
 		if (dma_transfer->cyclic == CYCLIC) {
 			printf("Transfer mode not supported!\n");
-			return FAILURE;
+			return -1;
 		}
 	}
 
@@ -397,7 +399,7 @@ int32_t axi_dmac_transfer_start(struct axi_dmac *dmac, struct axi_dma_transfer *
 			axi_dmac_write(dmac, AXI_DMAC_REG_SRC_STRIDE, 0x0);
 			break;
 		default:
-			return FAILURE; /* Other directions are not supported yet. */
+			return -1; /* Other directions are not supported yet. */
 		}
 
 		/* Compute the burst size. */
@@ -420,7 +422,7 @@ int32_t axi_dmac_transfer_start(struct axi_dmac *dmac, struct axi_dma_transfer *
 			dmac->next_src_addr = dmac->next_src_addr + (burst_size + 1);
 			break;
 		default:
-			return FAILURE;
+			return -1;
 		}
 
 		/* Compute remaining size. */
@@ -431,7 +433,7 @@ int32_t axi_dmac_transfer_start(struct axi_dmac *dmac, struct axi_dma_transfer *
 		axi_dmac_write(dmac, AXI_DMAC_REG_Y_LENGTH, 0x0);
 		axi_dmac_write(dmac, AXI_DMAC_REG_TRANSFER_SUBMIT, AXI_DMAC_TRANSFER_SUBMIT);
 	} else {
-		return FAILURE;
+		return -1;
 	}
 
 	return 0;
@@ -439,7 +441,7 @@ int32_t axi_dmac_transfer_start(struct axi_dmac *dmac, struct axi_dma_transfer *
 
 /*******************************************************************************
  * @brief wait for DMA transfer to be completed
- * 
+ *
  * @note This function should not be used for Tx DMA, when CYCLIC = 1.
  *******************************************************************************/
 int32_t axi_dmac_transfer_wait_completion(struct axi_dmac *dmac)
@@ -448,9 +450,9 @@ int32_t axi_dmac_transfer_wait_completion(struct axi_dmac *dmac)
 
 	while(!dmac->transfer.transfer_done) {
 		timeout++;
-		if (timeout == UINT32_MAX){
+		if (timeout == UINT32_MAX) {
 			printf("Error transferring data using DMA.\n");
-			return FAILURE;
+			return -1;
 		}
 	}
 
