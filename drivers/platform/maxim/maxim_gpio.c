@@ -473,7 +473,7 @@ static int32_t max_gpio_register_callback(struct no_os_irq_ctrl_desc *desc,
 	if (!desc || !desc->extra || !callback_desc || irq_id >= N_PINS)
 		return -EINVAL;
 
-	g_irq = callback_desc->config;
+	g_irq = callback_desc->legacy_config;
 	g_desc = desc->extra;
 	max_gpio_cfg = g_desc->extra;
 	port_id = MXC_GPIO_GET_IDX(max_gpio_cfg->port);
@@ -489,8 +489,8 @@ static int32_t max_gpio_register_callback(struct no_os_irq_ctrl_desc *desc,
 	}
 
 	descriptor->ctx = callback_desc->ctx;
-	descriptor->callback = callback_desc->callback;
-	descriptor->config = callback_desc->config;
+	descriptor->legacy_callback = callback_desc->legacy_callback;
+	descriptor->legacy_config = callback_desc->legacy_config;
 
 	gpio_callback[port_id][irq_id] = descriptor;
 

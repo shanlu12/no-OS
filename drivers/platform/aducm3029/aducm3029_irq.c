@@ -198,7 +198,7 @@ int32_t aducm3029_irq_register_callback(struct no_os_irq_ctrl_desc *desc,
 		uart_desc = aducm_desc->conf[irq_id].uart_conf;
 		if (!uart_desc)
 			return -1;
-		uart_desc->callback = callback_desc->callback;
+		uart_desc->callback = callback_desc->legacy_callback;
 		uart_desc->callback_ctx = callback_desc->ctx;
 		break;
 	case ADUCM_RTC_INT_ID:

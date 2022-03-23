@@ -187,7 +187,7 @@ int32_t xil_gpio_irq_ctrl_init(struct no_os_irq_ctrl_desc **desc,
 	if(status)
 		goto error_op;
 
-	callback.callback = &xil_gpio_irq_handler;
+	callback.legacy_callback = &xil_gpio_irq_handler;
 	callback.ctx = ldesc->extra;
 	status = no_os_irq_register_callback(xil_desc->parent_desc, ldesc->irq_ctrl_id,
 					     &callback);
@@ -252,7 +252,7 @@ int32_t xil_gpio_irq_register_callback(struct no_os_irq_ctrl_desc *desc,
 		return -1;
 
 	dev_callback->pin_nb = irq_id;
-	dev_callback->callback.callback = callback_desc->callback;
+	dev_callback->callback.legacy_callback = callback_desc->legacy_callback;
 	dev_callback->callback.ctx = callback_desc->ctx;
 	dev_callback->triggered = false;
 

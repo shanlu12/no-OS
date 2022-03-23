@@ -114,9 +114,9 @@ static int32_t adpd1080pmod_32k_calib(struct adpd188_dev *adpd1080_dev)
 		.mode = GPIO_GROUP_POSITIVE_EDGE
 	};
 	struct no_os_callback_desc sync_gpio_cb = {
-		.callback = adpd1080_sync_gpio_cb,
+		.legacy_callback = adpd1080_sync_gpio_cb,
 		.ctx = &sync_gpio_pulse_no,
-		.config = &sync_irq_config
+		.legacy_config = &sync_irq_config
 	};
 	status = no_os_irq_register_callback(cal_irq, ADUCM_GPIO_A_INT_ID,
 					     &sync_gpio_cb);

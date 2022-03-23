@@ -464,8 +464,8 @@ static int32_t max_uart_register_callback(struct no_os_irq_ctrl_desc *desc,
 	}
 
 	cb[irq_id]->ctx = callback_desc->ctx;
-	cb[irq_id]->callback = callback_desc->callback;
-	cb[irq_id]->config = callback_desc->config;
+	cb[irq_id]->legacy_callback = callback_desc->legacy_callback;
+	cb[irq_id]->legacy_config = callback_desc->legacy_config;
 
 	return 0;
 }

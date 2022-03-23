@@ -291,8 +291,8 @@ static int32_t max_rtc_register_callback(struct no_os_irq_ctrl_desc *desc,
 	}
 
 	cb->ctx = callback_desc->ctx;
-	cb->callback = callback_desc->callback;
-	cb->config = callback_desc->config;
+	cb->legacy_callback = callback_desc->legacy_callback;
+	cb->legacy_config = callback_desc->legacy_config;
 
 	return 0;
 }
